@@ -15,3 +15,51 @@ Unity Hub üzerinden 2D URP template ile yeni proje oluşturuldu.
 - Sprite sheet'ler Unity'e import edildi.
 - `Animator` bileşeni eklendi, `player_idle`, 'player_walk', `player_run`, `player_jump` animasyon klipleri oluşturuldu.
 - Animator Controller içinde `Speed` ve `isGrounded` parametreleri ile geçişler yapıldı.
+
+## 3. Mermi Saldırısı (Object Pooling)
+
+- `ObjectPool.cs` ile `bulletPrefab` üzerinden 20 adet mermi objesi havuzu oluşturuldu.
+- `BulletMove.cs` ile mermiye yön ve hız verildi.
+- Mermiler `Fire1` (left click) ile tetiklendi.
+
+**Kaynaklar:**
+[Introduction To Object Pooling In Unity]https://youtu.be/YCHJwnmUGDk?si=SPsmzylLj4OeUa8p
+[2D Shooting in Unity (Tutorial)]https://youtu.be/wkKsl1Mfp5M?si=HfgqZxpobbayPL0Y
+
+## 4. Düşman Karakteri
+
+- Düşmanlar kare sprite ile oluşturuldu.
+- `Enemy.cs` dosyasında sağlık sistemi eklendi.
+
+
+**Kaynak:**
+- [2D Shooting in Unity (Tutorial)]https://youtu.be/wkKsl1Mfp5M?si=HfgqZxpobbayPL0Y
+- [Interface Kullanımı - Unity](https://learn.unity.com/tutorial/interfaces)
+
+## 5. GameManager & UI
+
+- `GameManager.cs` singleton olarak yazıldı.
+- Düşman öldüğünde `AddScore()` çağrılıyor.
+- Canvas içine UI Text (`TextUI`) eklendi ve skor burada güncelleniyor.
+
+**Kaynaklar:**
+- [Singleton in Unity](https://learn.unity.com/tutorial/design-patterns-singleton)
+
+  ### Bonus: ScriptableObject ile Skor Kaydetme
+
+- `ScoreData.cs` adında bir `ScriptableObject` oluşturuldu.
+- Oyun kapanırken skor `OnApplicationQuit()` içinde ScriptableObject'e yazılıyor.
+- Oyun başladığında `GameManager` bu değeri yükleyip UI'ya aktarıyor.
+
+**Kaynaklar:**
+- [Unity Docs - ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)
+- [ScriptableObject Save/Load Tutorial (YouTube)](https://www.youtube.com/watch?v=6H_MVxwjl5Q)
+
+---
+
+## Projeyi Çalıştırmak İçin
+
+1. Unity Hub üzerinden projeyi açın.
+2. `Assets/Scenes/MainScene.unity` sahnesini çalıştırın.
+3. Oyunu başlatmak için `Play` tuşuna basın.
+4. Hareket tuşları 'A' 'D' zıplamak 'Space' ateş etmek 'mouse0'
