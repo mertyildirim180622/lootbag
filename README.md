@@ -53,8 +53,6 @@ Unity Hub üzerinden 2D URP template ile yeni proje oluşturuldu.
 
 **Kaynaklar:**
 - [Unity Docs - ScriptableObject](https://docs.unity3d.com/ScriptReference/ScriptableObject.html)
-- [ScriptableObject Save/Load Tutorial (YouTube)](https://www.youtube.com/watch?v=6H_MVxwjl5Q)
-
 ---
 
 ## Projeyi Çalıştırmak İçin
