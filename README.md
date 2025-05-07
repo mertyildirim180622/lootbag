@@ -33,17 +33,17 @@ Unity Hub üzerinden 2D URP template ile yeni proje oluşturuldu.
 
 
 **Kaynak:**
-- [2D Shooting in Unity (Tutorial)]https://youtu.be/wkKsl1Mfp5M?si=HfgqZxpobbayPL0Y
+- [2D Shooting in Unity (Tutorial)]https://youtu.be/wkKsl1Mfp5M?si=HfgqZxpobbayPL0Y(Used for creating the enemy aswell)
 - [Interface Kullanımı - Unity](https://learn.unity.com/tutorial/interfaces)
 
 ## 5. GameManager & UI
 
-- `GameManager.cs` singleton olarak yazıldı.
+- `GameManager.cs` 'UIManager.cs' singleton olarak yazıldı.
 - Düşman öldüğünde `AddScore()` çağrılıyor.
 - Canvas içine UI Text (`TextUI`) eklendi ve skor burada güncelleniyor.
 
 **Kaynaklar:**
-- [Singleton in Unity](https://learn.unity.com/tutorial/design-patterns-singleton)
+- [Singleton in Unity]([https://learn.unity.com/tutorial/design-patterns-singleton](https://medium.com/@kennethmclachlan11/singleton-ui-manager-92f67099a3ae)](https://medium.com/@kennethmclachlan11/singleton-ui-manager-92f67099a3ae))
 
   ### Bonus: ScriptableObject ile Skor Kaydetme
 
